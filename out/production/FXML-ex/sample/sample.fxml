@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="497.0" prefWidth="781.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <SplitPane dividerPositions="0.10101010101010101" layoutX="147.0" layoutY="59.0" orientation="VERTICAL" prefHeight="497.0" prefWidth="781.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" scaleShape="false" SplitPane.resizableWithParent="false">
+                    <children>
+                        <Button fx:id="adminButton" layoutX="714.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" onAction="#adminMode" text="Admin" textFill="#ee1111" />
+                        <TextField fx:id="displayedTime" layoutX="14.0" layoutY="11.0" text="" />
+                        <Text layoutX="196.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+                        <TextField fx:id="StatusDisplay" editable="false" layoutX="241.0" layoutY="11.0" prefHeight="25.0" prefWidth="58.0" text="" />
+                        <Text fx:id="vendMachine" layoutX="361.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine A" />
+                        <PasswordField fx:id="passwordField" layoutX="565.0" layoutY="11.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <SplitPane dividerPositions="0.15057915057915058" prefHeight="442.0" prefWidth="779.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" wrappingWidth="50.99998873472214" />
+                                        <TextField fx:id="inputBalance" layoutX="14.0" layoutY="18.0" prefHeight="25.0" prefWidth="51.0" text="0.00" />
+                                        <Button fx:id="balanceButton" layoutX="14.0" layoutY="45.0" mnemonicParsing="false" onAction="#updateBalance" prefHeight="25.0" prefWidth="75.0" text="Update" textFill="#000000" />
+                                        <Text layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" $" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="140.0" prefWidth="134.0">
+                                    <children>
+                                        <SplitPane dividerPositions="0.7035159817351598" layoutX="169.0" layoutY="256.0" orientation="VERTICAL" prefHeight="450.0" prefWidth="657.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="655.0" scaleShape="false" SplitPane.resizableWithParent="true">
+                                                    <children>
+                                                        <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="272.0" prefWidth="655.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="displaySelection" prefWidth="60.0" text="Selection" />
+                                                                <TableColumn fx:id="displayType" prefWidth="60.0" text="Type" />
+                                                                <TableColumn fx:id="displayPrice" prefWidth="75.0" text="Price" />
+                                                                <TableColumn fx:id="displayName" prefWidth="120.0" text="Name" />
+                                                                <TableColumn fx:id="displayNutrition" prefWidth="350.0" text="Nutrition" />
+                                                            </columns>
+                                                        </TableView>
+                                                        <Button fx:id="purchaseBut" layoutX="577.0" layoutY="272.0" mnemonicParsing="false" onAction="#computePurchase" text="Purchase" />
+                                                        <Text layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selection:" />
+                                                        <ChoiceBox fx:id="selectionBox" layoutX="65.0" layoutY="272.0" onMousePressed="#changeDisplayInv" prefWidth="150.0" />
+                                                        <Label fx:id="quantityBar" layoutX="230.0" layoutY="276.0" prefHeight="17.0" prefWidth="114.0" text="Inventory" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                    <children>
+                                                        <TextField fx:id="finalDisplay" layoutX="230.0" layoutY="18.0" prefHeight="140.0" prefWidth="630.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                            </items>
+                                        </SplitPane>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+    </children>
+</AnchorPane>

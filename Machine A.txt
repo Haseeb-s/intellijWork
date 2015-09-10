@@ -1,0 +1,40 @@
+Pepsi
+Drink
+1.25
+Calories-350
+CocaCola
+Drink
+1.50
+Calories-350
+Fanta
+Drank
+1.00
+Calories-350 Purple flavour
+Redbull
+Drink
+2.50
+Calories-0 Gives you wings
+Dasani
+Drink
+1.50
+Calories-1 Dont ask.
+Snickers
+Snack
+1.50
+Calories-250
+Kit-Kat
+Snack
+1.75
+Calories-275
+Crunch
+Snack
+1.25
+Calories-260
+Twinkie
+Snack
+2.20
+Calories-9000+
+Banana
+Snack
+5.99
+No Nutritional value

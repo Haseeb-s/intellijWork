@@ -1,0 +1,40 @@
+Pepsi
+Drink
+1.25
+Calories-350
+CocaCola
+Drink
+1.50
+Calories-350
+Four Loko
+Drank
+4.00
+Calories-999
+Vitamin Water Zero
+Drink
+1.75
+Calories-0
+Deer Park
+Drink
+1.00
+Calories-.5
+ButterFingers
+Snack
+1.10
+Calories-450
+Poptarts
+Snack
+.75
+Calories-240
+Nature Valley
+Snack
+1.25
+Calories-220
+Potato
+Snack
+.50
+Calories-10
+McChicken
+Snack
+1.00
+Calories-340
