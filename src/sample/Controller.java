@@ -186,7 +186,7 @@ public class Controller implements Initializable {
                 line = read.readLine();
                 x++;
             }
-            invArray[choice] = invArray[choice] - 1;
+            invArray[choice] = invArray[choice];
             for (int i = 0; i < 10; i++) {
                 outputWriter.write(Integer.toString(invArray[i]));
                 outputWriter.newLine();
@@ -198,7 +198,7 @@ public class Controller implements Initializable {
             File BStock = new File(Bstock);
             BStock.createNewFile();
             BufferedWriter bStockWriter = new BufferedWriter(new FileWriter(BStock));
-            invArray[choice] = invArray[choice] - 1;
+            invArray[choice] = invArray[choice];
             for (int i = 0; i < 10; i++) {
                 bStockWriter.write(Integer.toString(invArray[i]));
                 bStockWriter.newLine();
